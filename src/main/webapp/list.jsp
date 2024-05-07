@@ -52,25 +52,27 @@
 				<th>이름</th>
 				<th>비밀번호</th>
 			</tr>
-			<%
-			
-		  //화면출력
-		  
-        while(rs.next()) {
-			String userId = rs.getString("id");
-			String userName = rs.getString("name");
-			String userPwd = rs.getString("pwd");
-			
-			out.print("<tr>");
-			out.print("<td>" + userId + "</td>");
-			out.print("<td>" + userName + "</td>");
-			out.print("<td>" + userPwd + "</td>");
-			out.print("</tr>");
-		}
-         
-			
-			%>
+		<%
+    //화면출력
+    while(rs.next()) {
+        String userId = rs.getString("id");
+        String userName = rs.getString("name");
+        String userPwd = rs.getString("pwd");
+%>
+<tr>
+    <td><a href ="updateForm.jsp?id=<%=userId%>"><%=userId%></a></td>
+    <td><%=userName%></td>
+    <td><%=userPwd%></td>
+</tr>
+<% } %>
 
+			
+			
+		 	
+		 		
+		 	
+				
+        
 		</table>
 	</div>
 	

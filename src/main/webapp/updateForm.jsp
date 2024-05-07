@@ -15,7 +15,7 @@
 	Connection con = DriverManager.getConnection(url, user, password);
 	
 	//id값을 조건으로 sql문을 작성하기 update  쓰기 
-	String sql = "UPDATE users SET name=?, pwd=? WHERE id=?";
+	String sql = "UPDATE login SET name=?, pwd=? WHERE id=?";
 	PreparedStatement pstmt = con.prepareStatement(sql);
 	 	pstmt.setString(1, name); // 첫 번째 물음표에 name 값 대입
 	    pstmt.setString(2, pwd);  // 두 번째 물음표에 pwd 값 대입
@@ -58,8 +58,8 @@
 	    <br>
 	    <div class="text-center">
 	    		<input type="submit" value="변경" class="btn btn-secondary">  
-					<input type="button" value="삭제" class="btn btn-secondary" onclick="location.href=''">
-					<input type="button" value="목록" class="btn btn-secondary" onclick="location.href=''">
+					<input type="button" value="삭제" class="btn btn-secondary" onclick="location.href='delete.jsp'">
+					<input type="button" value="목록" class="btn btn-secondary" onclick="location.href='list.jsp'">
 			</div>
 		</form>
 	</div>
