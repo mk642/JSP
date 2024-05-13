@@ -8,8 +8,8 @@
 	Class.forName("org.mariadb.jdbc.Driver");
 	
 	//2. 연결 객체 생성
-	String url = "jdbc:mariadb://localhost:3306/jinsookdb";
-	String user = "jinsook";
+	String url = "jdbc:mariadb://localhost:3306/jspdb";
+	String user = "jsp";
 	String passwd = "1111";
 	Connection con = DriverManager.getConnection(url, user, passwd);
 

@@ -13,7 +13,7 @@
 <body>
 	<div class="jumbotron text-center" style="margin-bottom:0">
 	  <h1>My First Member Management</h1>
-	  <p>김진숙의 첫 번째 로그인 사용자 관리 프로그램</p>
+	  <p>기의 첫 번째 로그인 사용자 관리 프로그램</p>
 	</div>
 	
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">

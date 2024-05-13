@@ -19,7 +19,7 @@
 	PreparedStatement pstmt = con.prepareStatement(sql);
 	 	pstmt.setString(1, name); // 첫 번째 물음표에 name 값 대입
 	    pstmt.setString(2, pwd);  // 두 번째 물음표에 pwd 값 대입
-	    pstmt.setString(3, id);   // 세 번째 물음표에 id 값 대입 w
+	    pstmt.setString(3, id);   // 세 번째 물음표에 id 값 대입 
 
 	    int rowsAffected = pstmt.executeUpdate();
 

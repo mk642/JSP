@@ -11,13 +11,17 @@
 	Class.forName("org.mariadb.jdbc.Driver");
 	
 	//2. 연결 객체 생성
-	String url = "jdbc:mariadb://localhost:3306/jinsookdb";
-	String user = "jinsook";
+	String url = "jdbc:mariadb://localhost:3306/jspdb";
+	String user = "jsp";
 	String passwd = "1111";
 	Connection con = DriverManager.getConnection(url, user, passwd);
 
 	//3. 생성된 연결을 통해 SQL문 실행 의뢰 준비
-	String sql = "";
+	String sql = "UPDATE login SET name=?, pwd=? WHERE id=?  "; // 수정할 테이블 이름과 필드에 맞게 조정하세요.
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setString(1, name);
+	pstmt.setString(2, pwd);
+	pstmt.setString(3, id);
 	
 	
 	
