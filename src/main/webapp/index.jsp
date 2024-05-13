@@ -37,7 +37,7 @@
 	</nav>
 	<br><br>
   <div class="text-center">
-		<button  type="button" class="btn btn-primary" onclick="">로그인</button>
+		<button  type="button" class="btn btn-primary" onclick="location.href='loginForm.jsp'">로그인</button>
 		<button  type="button" class="btn btn-primary" onclick="location.href='insertForm.jsp'">회원가입</button>
 	</div>
 </body>
